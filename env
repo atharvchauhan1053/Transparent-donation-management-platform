@@ -1,0 +1,15 @@
+PORT=3000
+
+# Any long random text. Used to sign login tokens.
+JWT_SECRET=change-this-to-a-long-random-string-1234567890
+
+# Razorpay TEST keys (they start with rzp_test_)
+RAZORPAY_KEY_ID=rzp_test_TkKQgwvBRCGnw7
+RAZORPAY_KEY_SECRET=5sxxFQakUtPmvLK5hWkdenSE
+
+# Optional: only needed if you set up a Razorpay webhook
+RAZORPAY_WEBHOOK_SECRET=
+
+# true  = new NGO / CA accounts can log in immediately (good for testing)
+# false = new NGO / CA accounts stay "pending" until you run: npm run accounts approve <email>
+AUTO_APPROVE_ACCOUNTS=true
